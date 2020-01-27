@@ -1,16 +1,16 @@
 const port = 3003;
 
-const Bodyparser = require ("body-parser");
+const bodyParser = require ("body-parser");
 const express =  require ("express");
 
 const server = express();
 
-server.use(Bodyparser.urlencoded({ extended: true}));
+server.use(bodyParser.urlencoded({ extended: true}));
 
 
 server.listen(port , () =>{
-    console.log(`Server is running on port: ${port}`);
-})
+    console.log(`Backend is running on port: ${port}`);
+});
 
 
 
